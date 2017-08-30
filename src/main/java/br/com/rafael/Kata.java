@@ -66,7 +66,7 @@ public class Kata {
 
     private String getWord(Dictionary dictionary, String currentWord) {
         String wordFound = null;
-        if (currentWord.length() == 6) {
+        if (currentWord.length() == dictionary.getMaxNumberOfLetters()) {
             wordFound = dictionary.get(currentWord);
         }
         return wordFound;
